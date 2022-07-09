@@ -1,6 +1,6 @@
 # :desktop_computer:Blog Codelândia
 <img src="assets/readme_img/BlogPreview.PNG"></img>
-<h4 align="center"><a href="#" target="_blank">Acessar Demonstração</a></h4>
+<h4 align="center"><a href="https://blog-codelandia-eta.vercel.app/" target="_blank">Acessar Demonstração</a></h4>
 
 ---
 
