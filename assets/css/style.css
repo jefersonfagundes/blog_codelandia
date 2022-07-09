@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --purple: #574AE8;
+  --gradient-default: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+
+  --white-200: #F3F5F7;
+  --gray-dark: #1A202C;
+
+  --white: #fff;
+  --gray: #717171;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--white-200);
+    height: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Área de Pesquisa */
+
+header {
+    height: 200px;
+    /* position: sticky;
+    top: 0; */
+    background: var(--gradient-default);
+}
+
+header > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 10px;
+}
+
+nav.logo ul,
+div.search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: var(--white);
+    font-size: 1.125em;
+    font-weight: 300;
+}
+
+.search form {
+    display: flex;
+    width: 100%;
+    padding: 7px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search button img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.search form input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    color: var(--white);
+    background-color: transparent;
+}
+
+.search form input::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .875em;
+    line-height: 1.063em;
+    color: var(--white);
+    opacity: .5;
+}
+
+.search form input::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* Área com posts */
+
+main > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 45px 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.089);
+}
+
+section .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin-bottom: 27px;
+    color: var(--gray);
+}
+
+section .date span {
+    font-size: 0.875em;
+}
+
+section .date img {
+    width: 1.203em;
+}
+
+section h2,
+section p {
+    font-style: normal;
+    font-weight: 400;
+}
+
+section h2 {
+    font-size: 1.125em;
+    line-height: 1.375em;
+    margin-bottom: 9px;
+}
+
+section p {
+    font-size: 0.875em;
+    line-height: 1.625em;
+    color: var(--gray);
+}
+
+@media (min-width: 1279px) {
+    .nav a {
+        font-size: 1.3em;
+    }
+
+    section .date span,
+    .search form input::placeholder {
+        font-size: .925em;
+    }
+
+    section h2 {
+        font-size: 1.325em;
+    }
+
+    section p {
+        font-size: 1em
+    }
+
+    section .date img {
+        width: 1.253em;
+    }
+
+    .search form {
+        padding: 12px;
+    }
+
+    .search form input {
+        font-size: 1.05em;
+    }
+}
